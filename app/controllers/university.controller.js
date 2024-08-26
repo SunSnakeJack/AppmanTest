@@ -22,7 +22,7 @@ exports.findAll = (req, res) => {
 exports.create = (req, res) => {
     try {
         if (!req.body.name) {
-            res.status(400).json({ message: "คือมึงยังไม่ได้ใส่อะไรเข้าไป!! ไอน้ำตกหมู!!" })
+            res.status(400).json({ message: "Value must not be empty" })
             return;
         }
 
